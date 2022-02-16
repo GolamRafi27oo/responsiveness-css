@@ -1,0 +1,92 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: black;
+    animation: 2s infinite alternate ease-out breathing-color--dark;
+}
+@keyframes breathing-color--dark {
+    from{
+        background-color: black;
+    }
+    to{
+        background-color: hsl(0, 0%, 10%);
+    }
+}
+.logo{
+    margin-top: 40px;
+    height: 60px;
+    width: 60px;
+    border-radius: 60%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+.card-body{
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    height: 80vh;
+    width: 25%;
+    left: 50%;
+    top: 57%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.text{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(204, 198, 198);;
+}
+.text2{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+.btn{
+    width: 100%;
+}
+.bcolor{
+    background-color: aliceblue;
+    color: aliceblue;
+}
+.bcolor:hover{
+    background-color: black;
+}
+.submit{
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    background-color: blueviolet;
+    border-block-start-color: blueviolet;
+    border: 0px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.submit:hover{
+    background-color:rgb(99, 14, 179);
+    transition: 1s;
+}
+.footer{
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+div h4{
+    color: rgb(204, 198, 198);
+}
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

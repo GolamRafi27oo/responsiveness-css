@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+body
+{
+    background-color: black;
+    animation: 2s infinite alternate ease-out breathing-color--dark;
+}
+@keyframes breathing-color--dark {
+    from{
+        background-color: black;
+    }
+    to{
+        background-color: hsl(0, 0%, 10%);
+    }
+}
+.top ul{
+    background: rgb(0, 0, 0);
+    top: 0;
+    position: fixed;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    width: 100%;
+    cursor: pointer;
+}
+.top ul a{
+    text-decoration: none;
+}
+.top ul li{
+    padding: 15px;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+    color: whitesmoke;
+}
+.home{
+    padding-top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(199, 199, 199);
+    transition: .5s;
+    margin-bottom: 30%;
+}
+
+.about{
+    padding-top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(199, 199, 199);
+    transition: .5s;
+    margin-bottom: 10%;
+}
+.about h2{
+    font-size: 30px;
+    transition: .5s;
+}
+#about h2{
+    display: flex;
+    justify-content: center;
+}
+.find{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+    margin-bottom: 30%;
+}
+
+@media  screen and (max-width:999px ) {
+    .about h2{
+       font-size: 20px;
+   }
+}
+
+@media screen and (max-width:998px) {
+    .home{
+        padding-top: 50vh;
+    }
+    .top ul li{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:820px) {
+    .home{
+        padding-top: 50vh;
+    }
+    .about{
+        padding-top: 50vh;
+    }
+    .find{
+        padding-top: 50vh;
+        padding-bottom: 70%;
+    }
+}
+@media screen and (max-width:509px) {
+    .home{
+        padding-top: 55vh;
+    }
+    .about{
+        padding-top: 50vh;
+    }
+    .find{
+        padding-top: 50vh;
+        padding-bottom: 70%;
+    }
+}
+@media  screen and (max-width:472px ) {
+    .top ul li{
+        font-size: 15px;
+    }
+    .about h2{
+        font-size: 15px;
+    }
+    #about h2{
+        font-size: 10px;
+    }
+}
+@media  screen and (max-width:339px ) {
+    .top ul li{
+        font-size: 10px;
+    }
+}
